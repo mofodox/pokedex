@@ -223,60 +223,92 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swr */ "swr");
+/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swr__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _lib_fetcher__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/fetcher */ "./lib/fetcher.js");
 var _jsxFileName = "/Users/mofodox/Documents/dev/next-projects/pokedex/components/PokeCard.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
-const PokeCard = props => {
-  return __jsx("div", {
-    className: "jsx-1981333816" + " " + "card",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "jsx-1981333816" + " " + "card-content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "jsx-1981333816" + " " + "content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+
+
+const PokeCard = ({
+  name,
+  id
+}) => {
+  const {
+    data
+  } = swr__WEBPACK_IMPORTED_MODULE_3___default()(`https://pokeapi.co/api/v2/pokemon/${name}`, _lib_fetcher__WEBPACK_IMPORTED_MODULE_4__["default"]);
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/p/:id",
-    as: `/p/${props.id}`,
+    as: `/p/${id}`,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("a", {
-    className: "jsx-1981333816",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: undefined
-  }, __jsx("h3", {
-    className: "jsx-1981333816",
+  }, __jsx("div", {
+    className: "jsx-1061061549" + " " + "card has-text-centered",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: undefined
-  }, props.name))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1981333816",
+  }, __jsx("div", {
+    className: "jsx-1061061549" + " " + "card-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
     __self: undefined
-  }, ".card.jsx-1981333816{margin-bottom:32px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L2NvbXBvbmVudHMvUG9rZUNhcmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYXdCLEFBR3dDLG1CQUN2QiIsImZpbGUiOiIvVXNlcnMvbW9mb2RveC9Eb2N1bWVudHMvZGV2L25leHQtcHJvamVjdHMvcG9rZWRleC9jb21wb25lbnRzL1Bva2VDYXJkLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuXG5jb25zdCBQb2tlQ2FyZCA9IHByb3BzID0+IHtcbiAgICByZXR1cm4gKFxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNhcmRcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FyZC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvcC86aWRcIiBhcz17YC9wLyR7cHJvcHMuaWR9YH0+XG4gICAgICAgICAgICAgICAgICAgICAgICA8YT48aDM+e3Byb3BzLm5hbWV9PC9oMz48L2E+XG4gICAgICAgICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgLmNhcmQge1xuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAzMnB4O1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPC9kaXY+XG4gICAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBQb2tlQ2FyZCJdfQ== */\n/*@ sourceURL=/Users/mofodox/Documents/dev/next-projects/pokedex/components/PokeCard.js */"));
+  }, __jsx("div", {
+    className: "jsx-1061061549" + " " + "content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, data ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: data.sprites.front_default,
+    alt: `${name}`,
+    className: "jsx-1061061549",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }), __jsx("h4", {
+    className: "jsx-1061061549" + " " + "is-capitalized",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, name)) : __jsx("p", {
+    className: "jsx-1061061549",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }, "Loading..."))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "1061061549",
+    __self: undefined
+  }, ".card.jsx-1061061549{margin-bottom:32px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L2NvbXBvbmVudHMvUG9rZUNhcmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUJnQyxBQUdnRCxtQkFDdkIiLCJmaWxlIjoiL1VzZXJzL21vZm9kb3gvRG9jdW1lbnRzL2Rldi9uZXh0LXByb2plY3RzL3Bva2VkZXgvY29tcG9uZW50cy9Qb2tlQ2FyZC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcbmltcG9ydCB1c2VTV1IgZnJvbSAnc3dyJ1xuXG5pbXBvcnQgZmV0Y2hlciBmcm9tICcuLi9saWIvZmV0Y2hlcidcblxuY29uc3QgUG9rZUNhcmQgPSAoe25hbWUsIGlkfSkgPT4ge1xuICAgIGNvbnN0IHsgZGF0YSB9ID0gdXNlU1dSKGBodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24vJHtuYW1lfWAsIGZldGNoZXIpXG5cbiAgICByZXR1cm4gKFxuICAgICAgICA8TGluayBocmVmPVwiL3AvOmlkXCIgYXM9e2AvcC8ke2lkfWB9PlxuICAgICAgICAgICAgPGE+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkIGhhcy10ZXh0LWNlbnRlcmVkXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FyZC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRlbnRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB7ZGF0YSA/IChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e2RhdGEuc3ByaXRlcy5mcm9udF9kZWZhdWx0fSBhbHQ9e2Ake25hbWV9YH0gLz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNCBjbGFzc05hbWU9XCJpcy1jYXBpdGFsaXplZFwiPntuYW1lfTwvaDQ+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvUmVhY3QuRnJhZ21lbnQ+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgKSA6IChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHA+TG9hZGluZy4uLjwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgICAgICAgICAgICAgIC5jYXJkIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAzMnB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2E+XG4gICAgICAgIDwvTGluaz5cbiAgICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IFBva2VDYXJkIl19 */\n/*@ sourceURL=/Users/mofodox/Documents/dev/next-projects/pokedex/components/PokeCard.js */"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (PokeCard);
@@ -334,6 +366,27 @@ const SEO = props => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SEO);
+
+/***/ }),
+
+/***/ "./lib/fetcher.js":
+/*!************************!*\
+  !*** ./lib/fetcher.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function fetcher(...args) {
+  return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(...args).then(response => response.json());
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (fetcher);
 
 /***/ }),
 
@@ -2025,65 +2078,118 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_PokeCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/PokeCard */ "./components/PokeCard.js");
+/* harmony import */ var _lib_fetcher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/fetcher */ "./lib/fetcher.js");
+/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swr */ "swr");
+/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swr__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_PokeCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/PokeCard */ "./components/PokeCard.js");
 var _jsxFileName = "/Users/mofodox/Documents/dev/next-projects/pokedex/pages/index.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+// import fetch from 'isomorphic-unfetch'
 
 
 
 
-const IndexPage = props => {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+
+const IndexPage = function () {
+  const {
+    pages,
+    isLoadingMore,
+    loadMore
+  } = Object(swr__WEBPACK_IMPORTED_MODULE_3__["useSWRPages"])("pokemon-list", ({
+    offset,
+    withSWR
+  }) => {
+    const url = offset || 'https://pokeapi.co/api/v2/pokemon';
+    const {
+      data
+    } = withSWR(swr__WEBPACK_IMPORTED_MODULE_3___default()(url, _lib_fetcher__WEBPACK_IMPORTED_MODULE_2__["default"]));
+    if (!data) return null;
+    const {
+      results
+    } = data;
+    return results.map(result => {
+      return __jsx("div", {
+        className: "column is-one-third",
+        key: result.name,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, __jsx(_components_PokeCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        id: result.name,
+        name: result.name,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }));
+    });
+  }, SWR => SWR.data.next, []);
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     pageTitle: "Home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 34
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
-    className: "jsx-1919080872" + " " + "columns is-multiline content-column",
+    className: "jsx-1408410377" + " " + "columns title-column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 35
     },
-    __self: undefined
-  }, props.pokemon.map(pk => {
-    return __jsx("div", {
-      key: pk.name,
-      className: "jsx-1919080872" + " " + "column is-one-third",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: undefined
-    }, __jsx(_components_PokeCard__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      id: pk.name,
-      name: pk.name,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: undefined
-    }));
-  })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1919080872",
-    __self: undefined
-  }, ".content-column.jsx-1919080872{margin-top:124px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXFCd0IsQUFHc0MsaUJBQ3JCIiwiZmlsZSI6Ii9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCdcblxuaW1wb3J0IExheW91dCBmcm9tIFwiLi4vY29tcG9uZW50cy9MYXlvdXRcIlxuaW1wb3J0IFBva2VDYXJkIGZyb20gJy4uL2NvbXBvbmVudHMvUG9rZUNhcmQnXG5cbmNvbnN0IEluZGV4UGFnZSA9IHByb3BzID0+IHtcbiAgICByZXR1cm4gKFxuICAgICAgICA8TGF5b3V0IHBhZ2VUaXRsZT1cIkhvbWVcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1ucyBpcy1tdWx0aWxpbmUgY29udGVudC1jb2x1bW5cIj5cbiAgICAgICAgICAgICAgICB7IHByb3BzLnBva2Vtb24ubWFwKHBrID0+IHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1uIGlzLW9uZS10aGlyZFwiIGtleT17cGsubmFtZX0+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPFBva2VDYXJkXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlkPXtway5uYW1lfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBuYW1lPXtway5uYW1lfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgIH0pIH1cbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgLmNvbnRlbnQtY29sdW1uIHtcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luLXRvcDogMTI0cHg7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8L0xheW91dD5cbiAgICApXG59XG5cbkluZGV4UGFnZS5nZXRJbml0aWFsUHJvcHMgPSBhc3luYyBmdW5jdGlvbiAoKSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYGh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbmApXG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKClcblxuICAgIGNvbnNvbGUubG9nKGBGZXRjaGVkIHBva2Vtb246ICR7ZGF0YS5yZXN1bHRzLmxlbmd0aH1gKVxuXG4gICAgcmV0dXJuIHsgcG9rZW1vbjogZGF0YS5yZXN1bHRzIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgSW5kZXhQYWdlIl19 */\n/*@ sourceURL=/Users/mofodox/Documents/dev/next-projects/pokedex/pages/index.js */"));
-};
+    __self: this
+  }, __jsx("div", {
+    className: "jsx-1408410377" + " " + "column",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, __jsx("h1", {
+    className: "jsx-1408410377" + " " + "is-size-3 has-text-weight-bold",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, "All Pokemon"))), __jsx("div", {
+    className: "jsx-1408410377" + " " + "columns is-multiline content-column",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, pages), __jsx("button", {
+    disabled: isLoadingMore,
+    onClick: loadMore,
+    className: "jsx-1408410377" + " " + "button is-medium is-danger load-more-button is-fullwidth",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "Load More"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "1408410377",
+    __self: this
+  }, ".title-column.jsx-1408410377{margin-top:124px;margin-bottom:40px;}.load-more-button.jsx-1408410377{text-align:center;margin-bottom:88px;margin-top:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZDd0IsQUFHc0MsQUFTQyxpQkFSQyxDQVNBLGtCQVJ2QixDQVNvQixnQkFDcEIiLCJmaWxlIjoiL1VzZXJzL21vZm9kb3gvRG9jdW1lbnRzL2Rldi9uZXh0LXByb2plY3RzL3Bva2VkZXgvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBpbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy11bmZldGNoJ1xuaW1wb3J0IGZldGNoZXIgZnJvbSAnLi4vbGliL2ZldGNoZXInXG5pbXBvcnQgdXNlU1dSLCB7IHVzZVNXUlBhZ2VzIH0gZnJvbSAnc3dyJ1xuXG5pbXBvcnQgTGF5b3V0IGZyb20gXCIuLi9jb21wb25lbnRzL0xheW91dFwiXG5pbXBvcnQgUG9rZUNhcmQgZnJvbSAnLi4vY29tcG9uZW50cy9Qb2tlQ2FyZCdcblxuY29uc3QgSW5kZXhQYWdlID0gZnVuY3Rpb24gKCkge1xuICAgIGNvbnN0IHsgcGFnZXMsIGlzTG9hZGluZ01vcmUsIGxvYWRNb3JlIH0gPSB1c2VTV1JQYWdlcyhcbiAgICAgICAgXCJwb2tlbW9uLWxpc3RcIiwgKHsgb2Zmc2V0LCB3aXRoU1dSIH0pID0+IHtcbiAgICAgICAgICAgIGNvbnN0IHVybCA9IG9mZnNldCB8fCAnaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uJ1xuICAgICAgICAgICAgY29uc3QgeyBkYXRhIH0gPSB3aXRoU1dSKHVzZVNXUih1cmwsIGZldGNoZXIpKVxuXG4gICAgICAgICAgICBpZiAoIWRhdGEpIHJldHVybiBudWxsXG5cbiAgICAgICAgICAgIGNvbnN0IHsgcmVzdWx0cyB9ID0gZGF0YTtcblxuICAgICAgICAgICAgcmV0dXJuIHJlc3VsdHMubWFwKHJlc3VsdCA9PiB7XG4gICAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW4gaXMtb25lLXRoaXJkXCIga2V5PXtyZXN1bHQubmFtZX0+XG4gICAgICAgICAgICAgICAgICAgICAgICA8UG9rZUNhcmRcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZD17cmVzdWx0Lm5hbWV9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgbmFtZT17cmVzdWx0Lm5hbWV9XG4gICAgICAgICAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICB9KVxuICAgICAgICB9LFxuICAgICAgICBTV1IgPT4gU1dSLmRhdGEubmV4dCxcbiAgICAgICAgW11cbiAgICApXG4gXG4gICAgcmV0dXJuIChcbiAgICAgICAgPExheW91dCBwYWdlVGl0bGU9XCJIb21lXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtbnMgdGl0bGUtY29sdW1uXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW5cIj5cbiAgICAgICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImlzLXNpemUtMyBoYXMtdGV4dC13ZWlnaHQtYm9sZFwiPkFsbCBQb2tlbW9uPC9oMT5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW5zIGlzLW11bHRpbGluZSBjb250ZW50LWNvbHVtblwiPlxuICAgICAgICAgICAgICAgIHsgcGFnZXMgfVxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnV0dG9uIGlzLW1lZGl1bSBpcy1kYW5nZXIgbG9hZC1tb3JlLWJ1dHRvbiBpcy1mdWxsd2lkdGhcIiBkaXNhYmxlZD17aXNMb2FkaW5nTW9yZX0gb25DbGljaz17bG9hZE1vcmV9PkxvYWQgTW9yZTwvYnV0dG9uPlxuXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgLnRpdGxlLWNvbHVtbiB7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi10b3A6IDEyNHB4O1xuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiA0MHB4O1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIC8vIC5jb250ZW50LWNvbHVtbiB7XG4gICAgICAgICAgICAgICAgLy8gICAgIG1hcmdpbi10b3A6IDEyNHB4O1xuICAgICAgICAgICAgICAgIC8vIH1cblxuICAgICAgICAgICAgICAgIC5sb2FkLW1vcmUtYnV0dG9uIHtcbiAgICAgICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiA4OHB4O1xuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiA0MHB4O1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPC9MYXlvdXQ+XG4gICAgKVxufVxuXG4vLyBJbmRleFBhZ2UuZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgZnVuY3Rpb24gKHtcbi8vICAgICBxdWVyeToge29mZnNldCA9IDAgfVxuLy8gfSkge1xuLy8gICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGBodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24/b2Zmc2V0PSR7b2Zmc2V0fWApXG4vLyAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKClcblxuLy8gICAgIGNvbnNvbGUubG9nKGBGZXRjaGVkIHBva2Vtb246ICR7ZGF0YS5yZXN1bHRzLmxlbmd0aH1gKVxuXG4vLyAgICAgcmV0dXJuIHsgXG4vLyAgICAgICAgIHBva2Vtb246IGRhdGEsXG4vLyAgICAgICAgIG9mZnNldFxuLy8gICAgIH1cbi8vIH1cblxuZXhwb3J0IGRlZmF1bHQgSW5kZXhQYWdlIl19 */\n/*@ sourceURL=/Users/mofodox/Documents/dev/next-projects/pokedex/pages/index.js */"));
+}; // IndexPage.getInitialProps = async function ({
+//     query: {offset = 0 }
+// }) {
+//     const res = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}`)
+//     const data = await res.json()
+//     console.log(`Fetched pokemon: ${data.results.length}`)
+//     return { 
+//         pokemon: data,
+//         offset
+//     }
+// }
 
-IndexPage.getInitialProps = async function () {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(`https://pokeapi.co/api/v2/pokemon`);
-  const data = await res.json();
-  console.log(`Fetched pokemon: ${data.results.length}`);
-  return {
-    pokemon: data.results
-  };
-};
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
 
@@ -2175,6 +2281,17 @@ module.exports = require("react-is");
 /***/ (function(module, exports) {
 
 module.exports = require("styled-jsx/style");
+
+/***/ }),
+
+/***/ "swr":
+/*!**********************!*\
+  !*** external "swr" ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("swr");
 
 /***/ }),
 

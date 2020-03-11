@@ -6043,42 +6043,42 @@ var Pokemon = function Pokemon(props) {
     pageTitle: props.data.name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     className: "jsx-1119497138" + " " + "columns content-column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, __jsx("div", {
     className: "jsx-1119497138" + " " + "column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, __jsx("p", {
     className: "jsx-1119497138" + " " + "has-text-centered is-size-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, "#".concat(props.data.order)), __jsx("h1", {
     className: "jsx-1119497138" + " " + "is-size-1 has-text-centered is-capitalized has-text-weight-bold",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, props.data.name), __jsx("ul", {
     className: "jsx-1119497138" + " " + "has-text-centered",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }, props.data.types.map(function (type) {
@@ -6087,7 +6087,7 @@ var Pokemon = function Pokemon(props) {
       className: "jsx-1119497138" + " " + "tag is-info is-light",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 14
       },
       __self: this
     }, type.type.name);
@@ -6095,7 +6095,7 @@ var Pokemon = function Pokemon(props) {
     className: "jsx-1119497138" + " " + "image is-128x128 sprite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }, __jsx("img", {
@@ -6104,13 +6104,13 @@ var Pokemon = function Pokemon(props) {
     className: "jsx-1119497138",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   })))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
     id: "1119497138",
     __self: this
-  }, ".content-column.jsx-1119497138{margin-top:124px;}li.jsx-1119497138{list-style:none;display:inline;}.tag.jsx-1119497138{margin-right:8px;}.sprite.jsx-1119497138{margin:24px auto;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L3BhZ2VzL3AvW2lkXS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5QndCLEFBR3NDLEFBSUQsQUFLQyxBQUlBLGdCQVJGLENBSm5CLEFBU0EsQUFJQSxjQVJBIiwiZmlsZSI6Ii9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L3BhZ2VzL3AvW2lkXS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBmZXRjaCBmcm9tICdpc29tb3JwaGljLXVuZmV0Y2gnXG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvTGF5b3V0J1xuXG5jb25zdCBQb2tlbW9uID0gcHJvcHMgPT4ge1xuXG4gICAgcmV0dXJuIChcbiAgICAgICAgPExheW91dCBwYWdlVGl0bGU9e3Byb3BzLmRhdGEubmFtZX0+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtbnMgY29udGVudC1jb2x1bW5cIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtblwiPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJoYXMtdGV4dC1jZW50ZXJlZCBpcy1zaXplLTNcIj57YCMke3Byb3BzLmRhdGEub3JkZXJ9YH08L3A+XG4gICAgICAgICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJpcy1zaXplLTEgaGFzLXRleHQtY2VudGVyZWQgaXMtY2FwaXRhbGl6ZWQgaGFzLXRleHQtd2VpZ2h0LWJvbGRcIj57cHJvcHMuZGF0YS5uYW1lfTwvaDE+XG4gICAgICAgICAgICAgICAgICAgIDx1bCBjbGFzc05hbWU9XCJoYXMtdGV4dC1jZW50ZXJlZFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgeyBwcm9wcy5kYXRhLnR5cGVzLm1hcCh0eXBlID0+IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3NOYW1lPVwidGFnIGlzLWluZm8gaXMtbGlnaHRcIiBrZXk9e3R5cGUuc2xvdH0+e3R5cGUudHlwZS5uYW1lfTwvbGk+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICAgICAgfSl9XG4gICAgICAgICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT1cImltYWdlIGlzLTEyOHgxMjggc3ByaXRlXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz17cHJvcHMuZGF0YS5zcHJpdGVzLmZyb250X2RlZmF1bHR9IGFsdD17YCR7cHJvcHMuZGF0YS5uYW1lfS1zcHJpdGVgfSAvPlxuICAgICAgICAgICAgICAgICAgICA8L2ZpZ3VyZT5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgLmNvbnRlbnQtY29sdW1uIHtcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luLXRvcDogMTI0cHg7XG4gICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgbGkge1xuICAgICAgICAgICAgICAgICAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmU7XG4gICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgLnRhZyB7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogOHB4O1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIC5zcHJpdGUge1xuICAgICAgICAgICAgICAgICAgICBtYXJnaW46IDI0cHggYXV0bztcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgIDwvTGF5b3V0PlxuICAgIClcbn1cblxuUG9rZW1vbi5nZXRJbml0aWFsUHJvcHMgPSBhc3luYyBmdW5jdGlvbiAoY29udGV4dCkge1xuICAgIGNvbnN0IHtpZH0gPSBjb250ZXh0LnF1ZXJ5XG5cbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLyR7aWR9YClcbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKVxuXG4gICAgY29uc29sZS5sb2coYEZldGNoZWQgcG9rZW1vbjogJHtkYXRhLm5hbWV9YClcblxuICAgIHJldHVybiB7IGRhdGEgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBQb2tlbW9uIl19 */\n/*@ sourceURL=/Users/mofodox/Documents/dev/next-projects/pokedex/pages/p/[id].js */"));
+  }, ".content-column.jsx-1119497138{margin-top:124px;}li.jsx-1119497138{list-style:none;display:inline;}.tag.jsx-1119497138{margin-right:8px;}.sprite.jsx-1119497138{margin:24px auto;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L3BhZ2VzL3AvW2lkXS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF3QndCLEFBR3NDLEFBSUQsQUFLQyxBQUlBLGdCQVJGLENBSm5CLEFBU0EsQUFJQSxjQVJBIiwiZmlsZSI6Ii9Vc2Vycy9tb2ZvZG94L0RvY3VtZW50cy9kZXYvbmV4dC1wcm9qZWN0cy9wb2tlZGV4L3BhZ2VzL3AvW2lkXS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBmZXRjaCBmcm9tICdpc29tb3JwaGljLXVuZmV0Y2gnXG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvTGF5b3V0J1xuXG5jb25zdCBQb2tlbW9uID0gcHJvcHMgPT4ge1xuICAgIHJldHVybiAoXG4gICAgICAgIDxMYXlvdXQgcGFnZVRpdGxlPXtwcm9wcy5kYXRhLm5hbWV9PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW5zIGNvbnRlbnQtY29sdW1uXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW5cIj5cbiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiaGFzLXRleHQtY2VudGVyZWQgaXMtc2l6ZS0zXCI+e2AjJHtwcm9wcy5kYXRhLm9yZGVyfWB9PC9wPlxuICAgICAgICAgICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiaXMtc2l6ZS0xIGhhcy10ZXh0LWNlbnRlcmVkIGlzLWNhcGl0YWxpemVkIGhhcy10ZXh0LXdlaWdodC1ib2xkXCI+e3Byb3BzLmRhdGEubmFtZX08L2gxPlxuICAgICAgICAgICAgICAgICAgICA8dWwgY2xhc3NOYW1lPVwiaGFzLXRleHQtY2VudGVyZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIHsgcHJvcHMuZGF0YS50eXBlcy5tYXAodHlwZSA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzTmFtZT1cInRhZyBpcy1pbmZvIGlzLWxpZ2h0XCIga2V5PXt0eXBlLnNsb3R9Pnt0eXBlLnR5cGUubmFtZX08L2xpPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgICAgIH0pfVxuICAgICAgICAgICAgICAgICAgICA8L3VsPlxuICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgPGZpZ3VyZSBjbGFzc05hbWU9XCJpbWFnZSBpcy0xMjh4MTI4IHNwcml0ZVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e3Byb3BzLmRhdGEuc3ByaXRlcy5mcm9udF9kZWZhdWx0fSBhbHQ9e2Ake3Byb3BzLmRhdGEubmFtZX0tc3ByaXRlYH0gLz5cbiAgICAgICAgICAgICAgICAgICAgPC9maWd1cmU+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgICAgICAgIC5jb250ZW50LWNvbHVtbiB7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi10b3A6IDEyNHB4O1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIGxpIHtcbiAgICAgICAgICAgICAgICAgICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lO1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIC50YWcge1xuICAgICAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDhweDtcbiAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAuc3ByaXRlIHtcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAyNHB4IGF1dG87XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8L0xheW91dD5cbiAgICApXG59XG5cblBva2Vtb24uZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgZnVuY3Rpb24gKGNvbnRleHQpIHtcbiAgICBjb25zdCB7aWR9ID0gY29udGV4dC5xdWVyeVxuXG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYGh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi8ke2lkfWApXG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKClcblxuICAgIGNvbnNvbGUubG9nKGBGZXRjaGVkIHBva2Vtb246ICR7ZGF0YS5uYW1lfWApXG5cbiAgICByZXR1cm4geyBkYXRhIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgUG9rZW1vbiJdfQ== */\n/*@ sourceURL=/Users/mofodox/Documents/dev/next-projects/pokedex/pages/p/[id].js */"));
 };
 
 Pokemon.getInitialProps = function _callee(context) {
@@ -6147,7 +6147,7 @@ Pokemon.getInitialProps = function _callee(context) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!*********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fmofodox%2FDocuments%2Fdev%2Fnext-projects%2Fpokedex%2Fpages%2Fp%2F%5Bid%5D.js ***!
   \*********************************************************************************************************************************************************************/
@@ -6170,5 +6170,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

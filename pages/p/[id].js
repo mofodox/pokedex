@@ -2,7 +2,6 @@ import fetch from 'isomorphic-unfetch'
 import Layout from '../../components/Layout'
 
 const Pokemon = props => {
-
     return (
         <Layout pageTitle={props.data.name}>
             <div className="columns content-column">

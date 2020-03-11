@@ -1,22 +1,36 @@
 import Link from 'next/link'
+import useSWR from 'swr'
 
-const PokeCard = props => {
+import fetcher from '../lib/fetcher'
+
+const PokeCard = ({name, id}) => {
+    const { data } = useSWR(`https://pokeapi.co/api/v2/pokemon/${name}`, fetcher)
+
     return (
-        <div className="card">
-            <div className="card-content">
-                <div className="content">
-                    <Link href="/p/:id" as={`/p/${props.id}`}>
-                        <a><h3>{props.name}</h3></a>
-                    </Link>
-                </div>
-            </div>
+        <Link href="/p/:id" as={`/p/${id}`}>
+            <a>
+                <div className="card has-text-centered">
+                    <div className="card-content">
+                        <div className="content">
+                            {data ? (
+                                <React.Fragment>
+                                    <img src={data.sprites.front_default} alt={`${name}`} />
+                                    <h4 className="is-capitalized">{name}</h4>
+                                </React.Fragment>
+                            ) : (
+                                <p>Loading...</p>
+                            )}
+                        </div>
+                    </div>
 
-            <style jsx>{`
-                .card {
-                    margin-bottom: 32px;
-                }
-            `}</style>
-        </div>
+                    <style jsx>{`
+                        .card {
+                            margin-bottom: 32px;
+                        }
+                    `}</style>
+                </div>
+            </a>
+        </Link>
     )
 }
 
